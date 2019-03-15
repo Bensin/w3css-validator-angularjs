@@ -1,0 +1,5 @@
+<div *ngIf="apiResponseAStatus && apiResponseA.headers" [innerHTML]="apiResponseA.headers"></div>
+<div *ngIf="apiResponseAStatus && apiResponseA.error" [innerHTML]="apiResponseA.error"></div>
+
+    <input [(ngModel)]="url" type="text"/>
+    <button (click)="onClick()">Submit</button>
